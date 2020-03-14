@@ -64,9 +64,9 @@ print(train.info())
 
 print("Mean Age according to Pclass\n",train.groupby('Pclass').mean()['Age'])
 df_mean_age = train.groupby('Pclass').mean()['Age']
-print(int(df_mean_age[1]))
-print(df_mean_age[2])
-print(df_mean_age[3])
+print('Mean age of Pclass 1: ',int(df_mean_age[1]))
+print('Mean age of Pclass 2: ',df_mean_age[2])
+print('Mean age of Pclass 3: ',df_mean_age[3])
 # df_mean_age.loc['1', 'Pclass']
 
 # Create a function for imputation
