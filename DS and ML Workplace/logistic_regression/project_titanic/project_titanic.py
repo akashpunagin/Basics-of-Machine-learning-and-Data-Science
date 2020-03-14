@@ -146,11 +146,12 @@ predictions = logmodel.predict(X_test)
 
 # compare the actual output values for X_test with the predicted values
 df = pd.DataFrame({'Actual': y_test, 'Predicted': predictions})
-df['is_same'] = df['Actual'] - df['Predicted']
 print("\nActual values VS Predictions (1st 10 values):\n", df.head(10))
 
+df['is_same'] = df['Actual'] - df['Predicted']
 df['same_or_notsame'] = df['is_same'].apply(lambda x: 'not same' if (x !=0) else 'same')
 print(df.head())
+
 print('\nHow many did the model predicted right?\n',df['same_or_notsame'].value_counts())
 
 print('Accuracy of logistic regression classifier on test set: {:.2f}'.format(logmodel.score(X_test, y_test)))
