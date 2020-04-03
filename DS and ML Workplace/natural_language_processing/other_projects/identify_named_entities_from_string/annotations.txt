@@ -1,0 +1,131 @@
+"""
+Fine Grained POS tags:
+    CC coordinating conjunction
+    CD cardinal digit
+    DT determiner
+    EX existential there (like: “there is” … think of it like “there exists”)
+    FW foreign word
+    IN preposition/subordinating conjunction
+    JJ adjective ‘big’
+    JJR adjective, comparative ‘bigger’
+    JJS adjective, superlative ‘biggest’
+    LS list marker 1)
+    MD modal could, will
+    NN noun, singular ‘desk’
+    NNS noun plural ‘desks’
+    NNP proper noun, singular ‘Harrison’
+    NNPS proper noun, plural ‘Americans’
+    PDT predeterminer ‘all the kids’
+    POS possessive ending parent‘s
+    PRP personal pronoun I, he, she
+    PRP$ possessive pronoun my, his, hers
+    RB adverb very, silently,
+    RBR adverb, comparative better
+    RBS adverb, superlative best
+    RP particle give up
+    TO to go ‘to‘ the store.
+    UH interjection errrrrrrrm
+    VB verb, base form take
+    VBD verb, past tense took
+    VBG verb, gerund/present participle taking
+    VBN verb, past participle taken
+    VBP verb, sing. present, non-3d take
+    VBZ  takes
+    WDT wh-determiner which
+    WP wh-pronoun who, what
+    WP$ possessive wh-pronoun whose
+    WRB wh-abverb where, when
+"""
+
+"""
+Coarse Grained POS tags:
+    ADJ	        adjective
+    ADP	        adposition
+    ADV	        adverb
+    AUX	        auxiliary
+    CONJ    	conjunction
+    CCONJ   	coordinating conjunction
+    DET     	determiner
+    INTJ    	interjection
+    NOUN    	noun
+    NUM	        numeral
+    PART    	particle
+    PRON    	pronoun
+    PROPN   	proper noun
+    PUNCT   	punctuation
+    SCONJ   	subordinating conjunction
+    SYM	        symbol
+    VERB    	verb
+    X       	other
+    SPACE   	space
+"""
+
+"""
+Syntactic Dependency Labels:
+acl	        clausal modifier of noun (adjectival clause)
+advcl     	adverbial clause modifier
+advmod    	adverbial modifier
+amod	      adjectival modifier
+appos     	appositional modifier
+aux	        auxiliary
+case	      case marking
+cc        	coordinating conjunction
+ccomp	      clausal complement
+clf	        classifier
+compound  	compound
+conj	      conjunct
+cop	        copula
+csubj	      clausal subject
+dep	        unspecified dependency
+det	        determiner
+discourse  	discourse element
+dislocated	dislocated elements
+expl	      expletive
+fixed     	fixed multiword expression
+flat	      flat multiword expression
+goeswith  	goes with
+iobj	      indirect object
+list	      list
+mark	      marker
+nmod	      nominal modifier
+nsubj     	nominal subject
+nummod    	numeric modifier
+obj	        object
+obl	        oblique nominal
+orphan     	orphan
+parataxis 	parataxis
+punct       punctuation
+reparandum  overridden disfluency
+root	      root
+vocative  	vocative
+xcomp      	open clausal complement
+"""
+
+"""
+Named Entities:
+    PERSON      	People, including fictional.
+    NORP        	Nationalities or religious or political groups.
+    FAC         	Buildings, airports, highways, bridges, etc.
+    ORG         	Companies, agencies, institutions, etc.
+    GPE	            Countries, cities, states.
+    LOC         	Non-GPE locations, mountain ranges, bodies of water.
+    PRODUCT	        Objects, vehicles, foods, etc. (Not services.)
+    EVENT       	Named hurricanes, battles, wars, sports events, etc.
+    WORK_OF_ART	    Titles of books, songs, etc.
+    LAW	            Named documents made into laws.
+    LANGUAGE	    Any named language.
+    DATE	        Absolute or relative dates or periods.
+    TIME	        Times smaller than a day.
+    PERCENT     	Percentage, including ”%“.
+    MONEY       	Monetary values, including unit.
+    QUANTITY	    Measurements, as of weight or distance.
+    ORDINAL     	“first”, “second”, etc.
+    CARDINAL	    Numerals that do not fall under another type.
+"""
+
+"""
+The IOB (short for inside, outside, beginning) is a common tagging format for tagging tokens.
+    I- prefix before a tag indicates that the tag is inside a chunk.
+    B- prefix before a tag indicates that the tag is the beginning of a chunk.
+    O- tag indicates that a token belongs to no chunk (outside).
+"""
